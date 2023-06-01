@@ -4,7 +4,7 @@
     height: 100vh;
     margin: 0 auto;
     overflow: hidden;
-
+    
     .header__bg {
         height: 40%;
         background: url(./../../img/headerbg.jpg) no-repeat center/cover;
@@ -15,6 +15,7 @@
         height: 100%;
     }
 }
+// Placement "à cheval" avec position absolute 
 .contact__wrapper {
     display: flex;
     align-items: center;
@@ -26,7 +27,7 @@
     top: -150px;
     left: 0;
     right: 0;
-
+    
     h2 {
         text-transform: uppercase;
         font-weight: 900;
@@ -38,7 +39,7 @@
     h2 {
         margin-bottom: 40px;
     }
-
+    
     .contact__info__number {
         margin: 20px 0;
     }
@@ -58,59 +59,60 @@
     padding: 30px;
     box-shadow: 0px 0px 10px 10px rgba(237, 237, 237, 0.534);
     background: white;
-
+    
     h2 {
         margin: 0;
     }
     .contact__form__text {
         line-height: 2rem;
     }
-}
-// DEBUT DU CSS DU FORMULAIRE /////////////////// 
-.form {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 20PX;
-
-    label {
-        font-weight: bold;
-    } 
-    input {
-        border: none;
-        border-bottom: 1px solid rgb(167, 156, 156);
-        outline: none;
-        width: 100%;
-    }
-    .form__box {
-        margin: 30px 0;
-    }
-    .form__duo__wrapper {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10%;
-    }
-    // Css du bouton Envoyer 
-    .btn__wrapper {
-        text-align: center;
-
-        .form__btn {
-            padding: 10px 30px;
-            border-radius: 999px;
-            border: none ;
-            color: white;
+    // DEBUT DU CSS DU FORMULAIRE /////////////////// 
+    .form {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top: 20PX;
+        
+        label {
             font-weight: bold;
-            background:rgb(255,104,99);
-            font-size: 1.2rem;
-            margin-top: 30px;
-            transition: .3s all ease-in-out;
-            cursor: pointer;
-
-            &:hover {
-                background:rgb(250, 28, 21);
+        } 
+        input {
+            border: none;
+            border-bottom: 1px solid rgb(167, 156, 156);
+            outline: none;
+            width: 100%;
+        }
+        .form__box {
+            margin: 30px 0;
+        }
+        // Css partie avec 2 input sur la ligne 
+        .form__duo__wrapper {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10%;
+        }
+        // Css du bouton Envoyer 
+        .btn__wrapper {
+            text-align: center;
+            
+            .form__btn {
+                padding: 10px 30px;
+                border-radius: 999px;
+                border: none ;
+                color: white;
+                font-weight: bold;
+                background:rgb(255,104,99);
+                font-size: 1.2rem;
+                margin-top: 30px;
+                transition: .3s all ease-in-out;
+                cursor: pointer;
+                
+                &:hover {
+                    background:rgb(250, 28, 21);
+                }
             }
         }
-    }
-}   // FIN DU CSS DU FORMULAIRE /////////////////// 
+    }   // FIN DU CSS DU FORMULAIRE /////////////////// 
+}
 // FIN CSS POUR LA PARTIE DE DROITE /////////////////// 
 
 // PARTIE RESPONSIVE  /////////////////// 
@@ -120,7 +122,7 @@
     }
     .contact__wrapper {
         flex-direction: column;
-
+        
         .contact__info {
             order: 1;
         }
